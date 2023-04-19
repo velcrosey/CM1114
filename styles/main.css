@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+*
+{
+    font-family: 'Varela Round', sans-serif;
+    box-sizing : border-box;
+    
+}
+
+#login
+{
+    padding-left: 1150px;
+    padding-top: 50px;
+    display: inline;
+    position: absolute;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.image {
+    flex-basis: 30%;
+    padding-right: 20px;
+
+}
+
+.image img {
+    width: 100%;
+}
+
+.content {
+    flex-basis: 70%;
+}
+
+h1 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+p {
+    font-size: 16px;
+}
+
+
+/*padding-left: 20px;
+    padding-right: 50px;*/
+
+body
+{
+    background-color: #ffffff;
+    align-content: center;
+    padding-left: 20px;
+    padding-right: 400px;
+}
+
+header
+{
+    background-color: #ffffff;
+    border-top-left-radius : 10px;
+    border-top-right-radius: 10px;
+    padding-top: 5px;
+    padding-left: 25p;
+    margin: 0;
+}
+
+nav
+{
+    background-color: #28292a;
+    border: 1px solid #dedede;
+    display: block;
+    margin: 8px 22px 8px 22px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    ;
+}
+
+nav li
+{
+border: 2px;
+text-decoration: solid;
+background-color: #28292a;
+list-style-type: none;
+float: left;
+width: auto;
+padding: 20px;
+}
+
+nav li a
+{
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    padding: 35px;
+    padding-left: 50px;
+}
+
+main
+{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 50px;
+}
+
+video
+{
+    padding-top: 50px;
+}
+
+nav li:hover
+{
+    background-color: #696b6d;
+}
+
+nav ul
+{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+h2
+{
+    color: #28292a;
+    font-size: xx-large;
+    margin-top: 100px;
+}
+h1
+{
+    font-size: xxx-large;
+    color:#28292a;
+    display: inline;
+    padding: 40px;
+
+    
+}
+
+h4
+{
+    font-size: 15px;
+    color:#ffffff;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
+
+h3, h5, h6, p
+{
+    color:#28292a;
+    font-size: xx-large;
+
+}
+
+.intro
+{
+    padding-top: 100px;
+}
+
+p#intro
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+p
+{
+    font-size: large;
+    
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+  
+  .column img {
+    margin-top: 12px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+table
+{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+table td, table th
+{
+    border: 2px;
+    text-align: center;
+}
+
+Table tr:nth-child(even)
+{
+    background-color: #f2f2f2;
+}
+
+Table tr:hover
+{
+background-color: #696b6d;
+}
+
+Table th
+{
+    background-color: #ffffff;
+}
+
+
+aside
+{
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding-right: 30%;
+    padding-left: 10px;
+    
+}
+
+.gallery-img 
+{
+    width: 100%;
+}
+
+#img-gallery 
+{
+    padding-top: 10px;
+}
+
+#img-gallery .row 
+{
+    margin-bottom: 10px;
+}
+
+footer
+{
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: #28292a;
+    border: 2px;
+    text-decoration: solid;
+    float: left;
+    height: 90px;
+    width: 100%;
+    position:fixed;
+    bottom:0;
+    left:0;
+    ;
+}
+
+
+html, body {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+    margin-bottom: 100px;
+}
+
+header {
+	width: 100%;
+	padding-bottom: 25px;
+	flex-direction: column;
+}
+
+.twitter-timeline {
+    width: 60%;
+    ;
+}
+
+
+
+.heading {
+	font-family: "Montserrat", Arial, sans-serif;
+	font-size: 4rem;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	padding: 3.5rem 0;
+	color: #1a1a1a;
+}
+
+.heading span {
+	display: block;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+    padding-bottom: 100px;
+}
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+
+button
+{
+    margin-bottom: ;
+}
+
