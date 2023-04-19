@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>  <!--Includes CSS, Favicon and Page Title-->
+        <link rel="stylesheet" href="styles/main.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="icon" type="image/x-icon" href="img/icon.ico">
+        <title> PokéBeans </title>
+
+</head>
+
+    <body>
+
+        <!--Links relevant JS files for Bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <header>
+            <!--Includes the Logo and a login/password text box-->
+            <a href="index.html" class="logo"><img src="img/logoTRANS.png" alt="PokéBeans Logo" width="320px" height="120px"></a>
+            <form id="login">
+              <!---->
+              <input type="text" placeholder="Enter Username" name="username" alt="Login Box">
+              <input type="password" placeholder="Enter Password" name="password" alt="Password Box">
+              <button type="button" onclick="login()">Login </button>
+              <script>
+
+                var counter = 2;
+
+                function login(){
+                  if(counter % 2 == 0){
+                    alert('You have been logged in!');
+                  }
+                  else {
+                    alert('You have been logged out!');
+                  }
+                  counter += 1;
+              }
+
+                </script>
+            </form>
+
+        </header>
+        
+        <nav>
+            <!-- Navigation bar with all of the other html pages within website-->    
+            <li><a href= 'index.html'>Home</a></li>
+            <li><a href= 'news.html'>News</a></li>
+            <li><a href= 'rules.html'>Rules</a></li>
+            <li><a href= 'img_gallery.html'>Gallery</a></li>
+            <li><a href= 'pokemon_generator.html'>Pokemon Generator</a></li>
+            <li><a href= 'event_calendar.html'>Event Calendar</a></li>
+            <li><a href= 'current_members.html'>Current Members</a></li>
+            <li><a href= 'contact_us.html'>Contact Us</a></li>
+
+        </nav>
+
+
+        <main>
+            <div>
+                <h2> 
+                  <!-- Main heading for individual pages-->
+                    Welcome to PokéBeans!
+                </h2>
+
+                <div id="home-carousel" class="carousel slide" width="100px">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+
+                    <!-- Photo Carousel-->
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/carousel/screenshot1.jpg" class="d-block w-100" alt="Ceruledge in a field">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/carousel/screenshot2.jpg" class="d-block w-100" alt="Trainers with Koraidon and Miraidon">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/carousel/screenshot3.jpg" class="d-block w-100" alt="Hisuian Zorua and Hisuian Zoroark at sunset">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/carousel/screenshot4.jpg" class="d-block w-100" alt="Levincia City's gym leader, Iono">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#home-carousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#home-carousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Introduction paragraph-->
+                <p id="intro">We are a society of passionate Pokemon fans who share a love for all things Pokemon. Our group is a place where you can connect with other fans, share your experiences, and learn more about the Pokemon universe.
+
+                    As a member of our group, you can participate in discussions about the latest games, anime, and movies. You can also exchange tips and strategies for playing the games, as well as trade and battle with other members.
+                    
+                    Our group also hosts events, tournaments, and giveaways to keep things exciting and engaging. We strive to create a safe and inclusive environment for all members, where everyone is welcome to share their thoughts and ideas.
+                    
+                    Whether you're a casual fan or a hardcore player, our group is the perfect place to connect with like-minded individuals and experience the magic of the Pokemon world together.
+                </p>
+            </div>
+            
+            
+            <aside>
+                <!-- News article container-->
+                <h3>Latest News</h3>
+                <div class="container">
+                    <div class="image">
+                        <img src="img/shiny_zorua.png" alt="Shiny Zorua in Pokemon Scarlet and Violet">
+                    </div>
+                    <div class="content">
+                        <h3>Shiny Hisuian Zorua Giveaway!</h3>
+                        <p>
+                            Are you a fan of collecting rare shiny Pokémon? Then you won't want to miss this amazing giveaway! We're excited to announce that we will be hosting a Pokemon shiny Zorua giveaway, and it's free to enter. If you're not familiar with Zorua, it's a dark type Pokémon that evolves into Zoroark. What makes this giveaway so special is that this particular Zorua is shiny, which means it has a unique color palette and is incredibly rare. 
+                            Shiny Pokémon are highly sought after by collectors and trainers alike, and having one in your collection is a true badge of honor.
+                        </p>
+                        <p>
+                            Entering the giveaway is easy! You just need to be an official member of PokéBeans society! That's it! The winner will receive their shiny Zorua via a trade in the game of their choice.
+                            So what are you waiting for? Don't miss your chance to win this amazing shiny Pokémon and add it to your collection. Enter the giveaway today and good luck!
+                        </p>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Pokemon Youtube Video-->
+            <video width="800" height="auto" autoplay muted>
+                <source src="videos/pokemon_home_video.mp4" type="video/mp4" alt="Pokemon Timeline Video">
+                Your browser does not support the video tag.
+            </video>
+
+        </main>
+
+
+        <footer>
+          <!--Personalised Footer-->
+            <font color="white">Copyright - Clover Sey 2023</p>
+        </footer>
+    </body>
+</html>
