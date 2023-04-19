@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Includes CSS, Favicon and Page Title-->
+    <link rel="stylesheet" href="styles/main.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="img/icon.ico">
+    <title> PokéBeans </title>
+
+</head>
+
+    <body>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+        <header>
+            <!-- Adds the logo that serves as a link back to home-->
+            <a href="index.html" class="logo"><img src="img/logoTRANS.png" width="320px" height="120px" alt="PokéBeans Logo"></a>
+        </header>
+        <nav>
+
+            <!-- Navigation bar with all of the other html pages within website-->
+            <li><a href= 'index.html'>Home</a></li>
+            <li><a href= 'news.html'>News</a></li>
+            <li><a href= 'rules.html'>Rules</a></li>
+            <li><a href= 'img_gallery.html'>Gallery</a></li>
+            <li><a href= 'pokemon_generator.html'>Pokemon Generator</a></li>
+            <li><a href= 'event_calendar.html'>Event Calendar</a></li>
+            <li><a href= 'current_members.html'>Current Members</a></li>
+            <li><a href= 'contact_us.html'>Contact Us</a></li>
+
+        </nav>
+
+        <main>
+            <div>
+                <h2> 
+                    <!-- Main heading for individual pages-->
+                    Contact Us
+                </h2>
+
+                <p> Yo wats up lmao</p>
+                <!-- Form that submits membership information-->
+                <form>
+
+                    <!--Keeps the form contents within a box-->
+                    <fieldset>
+
+                        <!--Gives the form a 'Title'-->
+                        <legend>Contact us via the form below.</legend>
+                        
+                        <!-- Section for 'name' input within form-->
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" value=""/><br/>
+
+                        <!-- Section for 'email' input within form-->
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" value=""/> <br/>
+
+                        <!-- Section for 'membership status' input within form-->
+                        <label for="memberstatus">Membership Status:</label>
+                        <input type="radio" name="yes_no" checked>Member</input>
+                        <input type="radio" name="yes_no">Non-Member</input><br/>
+
+                        <!-- Section for 'comments' input within form-->
+                        <label for="comments">Comments:</label>
+                        <input type="text" name="comments" value=""/><br/>
+
+                        <!-- Section for file attachment within form-->
+                        <label for="comments">Attach a File :</label>
+                        <input type="file" id="myFile" name="filename"><br/>
+
+                        <!-- 'Submits info' when pressed-->
+                        <button type="button"
+                        onclick='document.getElementById("send_form").innerHTML="Form has been sent successfully!"'>Submit</button>
+                        
+                    </fieldset>
+                </form>
+            </div>
+
+            <!--Space for send_form function to display-->
+            <div id = "send_form">
+
+            </div>
+        </main>
+
+        <footer>
+            <!--Personalised Footer-->
+            <font color="white">Copyright - Clover Sey 2023 </p>
+        </footer>
+    </body>
+</html>
