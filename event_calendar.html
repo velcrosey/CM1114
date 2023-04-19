@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <!--Includes CSS, Favicon and Page Title-->
+        <link rel="stylesheet" href="styles/main.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="icon" type="image/x-icon" href="img/icon.ico">
+        <title> PokéBeans </title>
+
+</head>
+
+    <body>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+        <header>
+            <a href="index.html" class="logo"><img src="img/logoTRANS.png" width="320px" height="120px" alt="PokéBeans Logo"></a>
+        </header>
+        
+        <nav>
+            <!-- Adds the logo that serves as a link back to home--> 
+             <!-- Navigation bar with all of the other html pages within website-->   
+            <li><a href= 'index.html'>Home</a></li>
+            <li><a href= 'news.html'>News</a></li>
+            <li><a href= 'rules.html'>Rules</a></li>
+            <li><a href= 'img_gallery.html'>Gallery</a></li>
+            <li><a href= 'pokemon_generator.html'>Pokemon Generator</a></li>
+            <li><a href= 'event_calendar.html'>Event Calendar</a></li>
+            <li><a href= 'current_members.html'>Current Members</a></li>
+            <li><a href= 'contact_us.html'>Contact Us</a></li>
+
+        </nav>
+
+        <main>
+            <h2> 
+                <!-- Main heading for individual pages-->
+                Events
+            </h2>
+            
+            
+            <p> Here you can find all of our upcoming events</p>
+
+            <!-- Events table-->
+            <table>
+                <tr>
+                    <td></td><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th><th>Saturday</th><th>Sunday</th>
+                </tr>
+                <tr>
+                    <th>W1</th><td></td><td></td><td></td><td></td><td></td><td>Random trades <br/> In-Person @ the club house</td><td></td>
+                </tr>
+                <tr>
+                    <th>W2</th><td></td><td>Battles! <br/> In-person @ the club house</td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <th>W3</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <th>W4</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <th>W5</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <th>W6</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <th>W7</th><td></td><td></td><td></td><td></td><td>Double Battles! <br/>In-person @ the club house</td><td></td><td></td>
+                </tr>
+                <tr>
+                    <th>W8</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <th>W9</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <th>W10</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <th>W11</th><td></td><td></td><td></td><td></td><td></td><td></td><td>Mystery Gift Sunday! <br/>Online</td>
+                </tr>
+                <tr>
+                    <th>W12</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+            </table>
+
+            <p><legend>Want to Recommend a event? Tell us below!</legend></p>
+
+            <form name="event"> 
+                
+                
+                <!-- Section for 'name' input within form-->
+                <label for="event_title">Event Name:</label>
+                <input type="text" name="event_title" value=""/><br/>
+
+                <!-- Section for 'membership status' input within form-->
+                <label for="event_date">Event Date::</label>
+                <input type="date" name="event_date" value="">
+
+
+                <!-- 'Submits info' when pressed-->
+                <button onclick="submit_event()">Try it</button>
+                
+                    
+            </form>
+
+            <!-- Function for when the user does not enter anything-->   
+            <script>
+                function submit_event() {
+                    var title = document.forms["event"]["event_title"].value;
+                    var date = document.forms["event"]["event_date"].value;
+                    if (title == "") {
+                    alert("An event must have a title!");
+                    }
+                    else {
+                    if (date.length == 0) {
+                    alert("An event must have a date!");
+                    }
+                    else {
+                    alert("Event submitted! The society will contact you soon!");
+                    }
+                    }
+                    }
+            </script>
+
+        </main>
+
+
+        <footer>
+            <!--Personalised Footer-->
+            <font color="white">Copyright - Clover Sey 2023 </p>
+        </footer>
+    </body>
+</html>
